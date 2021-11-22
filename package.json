@@ -1,5 +1,5 @@
 {
-  "name": "gulp",
+  "name": "@petr26/gulp",
   "version": "4.0.2",
   "description": "The streaming build system.",
   "homepage": "https://gulpjs.com",
@@ -8,6 +8,9 @@
     "Eric Schoffstall <yo@contra.io>",
     "Blaine Bublitz <blaine.bublitz@gmail.com>"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "gulpjs/gulp",
   "license": "MIT",
   "engines": {
@@ -30,20 +33,20 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
-    "glob-watcher": "^5.0.3",
-    "gulp-cli": "^2.2.0",
-    "undertaker": "^1.2.1",
-    "vinyl-fs": "^3.0.0"
+    "glob-watcher": "git://github.com/Petr26/glob-watcher#master",
+    "gulp-cli": "^2.3.0",
+    "undertaker": "^1.3.0",
+    "vinyl-fs": "^3.0.3"
   },
   "devDependencies": {
-    "coveralls": "github:phated/node-coveralls#2.x",
-    "eslint": "^2.13.1",
-    "eslint-config-gulp": "^3.0.1",
-    "expect": "^1.20.2",
-    "mkdirp": "^0.5.1",
-    "mocha": "^3.0.0",
-    "nyc": "^10.3.2",
-    "rimraf": "^2.6.3"
+    "coveralls": "^3.1.1",
+    "eslint": "^8.2.0",
+    "eslint-config-gulp": "^5.0.1",
+    "expect": "^27.3.1",
+    "mkdirp": "^1.0.4",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
+    "rimraf": "^3.0.2"
   },
   "keywords": [
     "build",
